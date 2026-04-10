@@ -6,6 +6,22 @@
     <title>Document</title>
   </head>
   <body>
-    <h1></h1>
+    <script>
+      // var keyword redeclare and reassign are possible
+      var a = 10;
+      document.write("<br>A is :", a);
+      var a = "xyz";
+      document.write("<br>A is: ", a);
+
+      // const keyword redeclare are reassign are not possible
+      const pi = 3.14;
+      document.write("<br>Pi Value is", pi);
+
+      // let keyword can't redeclare but reassign is possible
+      let str = "ahmedabad";
+      document.write("<br>", str);
+      str = "baroda";
+      document.write("<br>", str);
+    </script>
   </body>
 </html>
