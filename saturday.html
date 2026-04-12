@@ -5,5 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <script>
+      let a = 34;
+      let b = 20;
+      document.write("<br>Addition is", a + b);
+      document.write("<br>Sub is", a - b);
+      document.write("<br>Mul is", a * b);
+      document.write("<br>div is", a / b);
+      document.write("<br>Mod is", a % b); //return reminder
+      document.write("<br>A is:", a); //34
+      b = a++; //post fix
+      document.write("<br>A is ", a); //35
+      document.write("<br>B - postfix is +b", b); //34 old value
+      b = ++a; //prefix
+      document.write("<br>A is ", a); //36
+      document.write("<br>B - prefix  is +b ", b); //36 new value
+    </script>
+  </body>
 </html>
