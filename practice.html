@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //synchronous line by line
+      //   alert("hello hi");
+    </script>
+  </head>
+  <body>
+    <div id="demo"></div>
+    <script>
+      let a = 10;
+      let b = 20;
+      b = a++;
+      document.write("A is :", a); //11
+      document.write("<br>B Is postfix: ", b); //10
+      b = ++a;
+      document.write("<br>A prefix is :", a); //12
+      document.write("<br>B prefixis :", b); //12
+      b = a--; //postfic decrement
+      document.write("<br>A prefix is:", a); //11
+      document.write("<br>B post Decrement is:", b); //12
+      b = --a; //prefix decrement
+      document.write("<br>A decrement is: ", a); //10
+      document.write("<br>B decrement is :", b); //10
+    </script>
+  </body>
+</html>
