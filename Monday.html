@@ -11,24 +11,42 @@
       let a = 35;
       let b = 30;
       let c = 200;
-      document.write("<br>a>b && a>c is =", a > b && a > c);
-      document.write("<br>a>b || a>c is ", a > b || a > c);
+      document.write("<br>a>b && a>c is =", a > b && b > c);
+      document.write("<br>a>b || a>c is ", a < b || a < c);
       document.write("<br> !a>b || a>c is", !a > b || a > c);
 
+      let abc = 56;
+      let xyz = 78;
+      let asd = 100;
+      document.write(
+        "<br> abc > xyx && abc < asd is =",
+        !(abc < xyz) && abc < asd,
+      );
       //ternory operator = ? :
       // (condition) ? true block : false block
-      document.write(a > b ? "<br>A is maximum" : "<br> B is maximum");
-      let age = 17;
+      // document.write(a > b ? "<br>A is maximum" : "<br> B is maximum");
+      // let age = 17;
+      // document.write(
+      //   age >= 18
+      //     ? "<br>You are elligible for vote"
+      //     : "<br>You are not elligible for vote",
+      // );
+      let no = 8;
+      document.write(no % 2 == 0 ? "<br>No is Even" : "<br>no is Odd");
+      let num = 23;
+      document.write(num % 2 == 0 ? "<br> Num is even" : "<br>Num is odd");
+      const noo = 34;
+      document.write(noo % 2 == 0 ? "<br>Even" : "<br>Odd");
+
+      let age = 11;
       document.write(
         age >= 18
-          ? "<br>You are elligible for vote"
-          : "<br>You are not elligible for vote",
+          ? "<br>11 Elligible for vote"
+          : "<br> 11Not Elligibel for Vote",
       );
-      // let no = 8;
-      // document.write(no % 2 == 0 ? "<br>No is Even" : "<br>no is Odd");
 
-      let no = 23;
-      document.write(no % 2 == 0 ? "<br> no is even" : "<br>no is odd");
+      let voteage = 78;
+      document.write(voteage >= 18 ? "<br> Vote apply" : "<br>Not vote apply");
     </script>
   </body>
 </html>
